@@ -1,0 +1,94 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("images/booking.jpeg") ; /* Replace with your image URL */
+    background-size: cover;
+     background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.input-box, .invoice-box{
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #007bff;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #555;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/*button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}*/
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.invoice-header, .invoice-body, .invoice-footer {
+    margin-bottom: 20px;
+}
+
+.invoice-header div, .invoice-body div, .invoice-footer div {
+    margin-bottom: 10px;
+}
+
+strong {
+    display: inline-block;
+    width: 150px;
+}

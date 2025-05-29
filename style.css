@@ -1,0 +1,491 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Header styles */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("images/back-1.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    background-color: #e72e77;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+.register-btn {
+    background: #fff;
+    color: #e72e77;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.register-btn:hover {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+/* Search box styles */
+.search-box {
+    padding: 120px 7% 40px;
+    text-align: center;
+    color: #fff;
+}
+
+.search-box h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-box p {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.search-field {
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e72e77;
+    padding: 10px;
+    border: 2px solid #e72e77;
+    border-radius: 25px;
+    margin: 10px auto;
+    background-color: #fff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.search-field:focus {
+    outline: none;
+    border-color: #ff9900;
+    background-color: #fff;
+}
+
+.btn {
+    background: #ff5361;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e72e77;
+}
+
+/* Services section styles */
+.contain {
+    padding: 50px 7%;
+    z-index: index -10;;
+}
+
+.sub-title {
+    margin: 100px 0 50px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #e72e77;
+    text-align: center;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.services div {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.services div:hover {
+    transform: translateY(-10px);
+}
+
+.services div img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.services div span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Popular venues section styles */
+.popular {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.popular div {
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.popular div:hover {
+    transform: translateY(-10px);
+}
+
+.popular div img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.popular h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin: 20px 0 10px;
+}
+
+.popular p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.button {
+    background: #ff5361;
+    color: #fff;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e72e77;
+    color: #fff;
+}
+
+/* About DreamFest section styles */
+.about-msg {
+    text-align: center;
+    margin: 100px 0;
+    color: #333;
+}
+
+.about-msg h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #e72e77;
+    margin-bottom: 20px;
+}
+
+.about-msg p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+/* Footer styles */
+footer {
+    padding: 50px 5%;
+    background-color: #acd0e4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.f-container h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.f-container a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.f-container a:hover {
+    transform: translateX(5px);
+    color: #e72e77;
+}
+
+.f-container p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.f-container input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.f-container .btn {
+    background: #e72e77;
+    color: #fff;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.f-container .btn:hover {
+    background-color: #ff5361;
+}
+
+/* Social media icons */
+.social {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social a {
+    text-decoration: none;
+    color: #333;
+    font-size: 2rem;
+    margin: 0 10px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social a:hover {
+    color: #e72e77;
+    transform: scale(1.2); /* Increase the size on hover */
+}
+
+/* Footer bottom content */
+.footer-content {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content h1 {
+    font-size: 1.5rem;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    padding: 20px 0;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+/* About DreamFest section styles */
+.about-msg {
+    text-align: center;
+    margin: 100px 7%;
+    padding: 50px;
+    background-color: #ffe6f0; /* Light pink background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #333;
+}
+
+.about-msg h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #e72e77;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.about-msg p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 0;
+    text-align: justify; /* Justified text for a clean look */
+}
+
+.about-msg p span {
+    color: #e72e77; /* Highlight certain words with brand color */
+    font-weight: bold;
+}
+
+
+/*-----------------------Chatbot design------------------------------*/
+/*-----------------------------------------------------------chatbot-----------------*/
+.chatbot-container {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.chatbot-header {
+    background: #e72e77;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-body {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chatbot-footer {
+    padding: 10px;
+    display: flex;
+}
+
+.chatbot-footer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.chatbot-footer button {
+    padding: 10px;
+    background: #e72e77;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#openChatbot {
+    width: 10rem;
+    height:4rem;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    background: #e72e77;
+    color: white;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.chatbot-message {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 80%;
+}
+
+.bot-message {
+    background: #eee;
+    align-self: flex-start;
+    font-size: 1.0rem;
+}
+
+.user-message {
+    background: #007bff;
+    color: white;
+    align-self: flex-end;
+    font-size: 1.0rem;
+}

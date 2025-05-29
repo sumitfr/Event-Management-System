@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+/*-----------------------------------header---------------------------*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 7%;
+}
+.navbar-white{
+    background-color: #fff;
+    box-shadow: 10px 5px 10px rgba(0,0,0,0.05);
+    margin-bottom: 50px;
+}
+.logo{
+    width:250px ;
+    height: 100px;
+    cursor: pointer;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin:10px 30px;
+    
+
+}
+.nav-links li a{
+    text-decoration: none;
+    color:#000;
+    font-weight: 500;
+}
+.register-btn{
+    background: #ff5361;
+    color:#fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+/*--------------------------------venue-list------------------------------*/
+.container{
+    padding: 0 7%;
+}
+.venue-list{
+    margin: top 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-col{
+    flex-basis: 70%;
+}
+.right-col{
+    flex-basis: 25%;
+}
+.left-col h1{
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    
+}
+.hotel{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 1px solid #ccc;
+}
+.hotel-img{
+    flex-basis: 40%;
+}
+.hotel-info{
+    flex-basis: 58%;
+    color: #555;
+
+}
+.hotel-img img{
+    width: 100%;
+    border-radius: 12px;
+}
+.hotel-info h2{
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    margin: 10px 0;
+}
+.hotel-info p {
+    margin-top: 10px;
+}
+#star{
+    color: goldenrod;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+.button{
+    background: #ff5361;
+    color: #fff;
+    width: 120px;
+    height:40px ;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 2px;
+   
+    
+    
+}
+.sidebar{
+    border: 1px solid #999 ;
+    padding: 20px 30px;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.sidebar h2{
+    font-weight: 500;
+}
+.sidebar h3{
+    font-weight: 500;
+    margin: 20px 0 10px;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    color: #555;
+    margin-bottom: 10px;
+}
+.filter p{
+    flex:1;
+}
+.filter input{
+    margin-right: 15px;
+    cursor: pointer;
+}
+.sidebar-link{
+    text-align: right;
+    margin: 20px 0;
+
+}
+.sidebar-link a{
+    text-decoration: none;
+    color: #333;
+}
+.pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+.pagination img{
+    width: 15px;
+    margin: 10px 20px;
+}
+.pagination span{
+    margin: 10px 8px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.pagination .current{
+    background: #333;
+    color: #fff;
+}

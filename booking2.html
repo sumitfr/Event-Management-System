@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Invoice</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="input-box">
+        <h1>Booking Details</h1>
+        <form id="invoiceForm">
+            <label for="hotelName">Venue Name:</label>
+            <input type="text" id="hotelName" name="hotelName" placeholder="Enter Venue Name"><br>
+            
+            <label for="invoiceDate">Invoice Date:</label>
+            <input type="date" id="invoiceDate" name="invoiceDate"><br>
+            
+            <label for="guestName">Full Name *:</label>
+            <input type="text" id="guestName" name="guestName" placeholder="Enter Your Full Name"><br>
+            
+            <label for="roomType">Mobile Number:</label>
+            <input type="number" id="roomType" name="roomType" placeholder="Enter Your Mobile Number"><br>
+            
+            <label for="checkInDate">Email Address:</label>
+            <input type="email" id="checkInDate" name="checkInDate" placeholder="Enter Your Email"><br>
+
+            <label for="bookingDate">Booking Date:</label>
+            <input type="date" id="bookingDate" name="bookingDate"><br>
+            
+            <label for="checkOutDate">Function Time:</label>
+            <input type="time" id="checkOutDate" name="checkOutDate"><br>
+            
+            <label for="nights">Number of Guests:</label>
+            <input type="number" id="nights" name="nights" placeholder="Enter Number of Guests"><br>
+            
+            <label for="menuAmount">Menu Rate (per plate):</label>
+            <input type="number" step="0.01" id="menuAmount" name="menuAmount"><br>
+            
+            <button type="button" onclick="generateInvoice()">Generate Invoice</button>
+        </form>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Invoice</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="invoice-box" id="invoiceBox">
+        <h1>Booking Invoice</h1>
+        <div class="invoice-header">
+            <div><strong>Venue Name:</strong> <span id="displayHotelName"></span></div>
+            <div><strong>Invoice Date:</strong> <span id="displayInvoiceDate"></span></div>
+            <div><strong>Booking Date:</strong> <span id="displayBookingDate"></span></div>
+        </div>
+        <div class="invoice-body">
+            <div><strong>Full Name:</strong> <span id="displayGuestName"></span></div>
+            <div><strong>Mobile Number:</strong> <span id="displayRoomType"></span></div>
+            <div><strong>Email Address:</strong> <span id="displayCheckInDate"></span></div>
+            <div><strong>Function Time:</strong> <span id="displayCheckOutDate"></span></div>
+            <div><strong>Number of Guests:</strong> <span id="displayNights"></span></div>
+        </div>
+        <div class="invoice-footer">
+            <div><strong>Total Amount:</strong> Rs. <span id="displayTotalAmount"></span></div>
+            <button id="checkout-button">Pay Now</button>
+        </div>
+    </div>
+
+    <script src="invoice.js"></script>
+</body>
+</html>
